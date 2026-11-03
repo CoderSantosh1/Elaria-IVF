@@ -11,10 +11,12 @@ interface BlogPostPageProps {
 
 export const dynamicParams = false;
 
-const findPost = (slug: string) => (data.blogs as BlogPost[]).find((post) => post.slug === slug);
+const posts = data.categories.ElariaIVF.sections.Blog.items as BlogPost[];
+
+const findPost = (slug: string) => posts.find((post) => post.slug === slug);
 
 export function generateStaticParams() {
-  return data.blogs.map(({ slug }) => ({ slug }));
+  return posts.map(({ slug }) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
@@ -30,7 +32,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <>
-      <PageBanner title="Blogs" />
+      <PageBanner title={data.common.pageHeroes.blogDetails.title} />
       <BlogArticle post={post} />
     </>
   );

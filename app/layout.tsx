@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import TopBar from "@/components/layout/TopBar";
 import data from "@/data/category.json";
-import type { SiteInfo } from "@/types";
+import type { CommonData } from "@/types";
 import "./globals.css";
 
 const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
@@ -14,20 +14,20 @@ const raleway = Raleway({ subsets: ["latin"], variable: "--font-raleway" });
 
 export const metadata: Metadata = {
   title: { default: "Elaria IVF | Fertility & Reproductive Care", template: "%s | Elaria IVF" },
-  description: data.site.tagline,
+  description: data.common.site.tagline,
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const site = data.site as SiteInfo;
+  const common = data.common as CommonData;
 
   return (
     <html lang="en" className={`${dmSans.variable} ${outfit.variable} ${dmSerif.variable} ${raleway.variable}`}>
       <body className="flex min-h-dvh flex-col antialiased">
         <noscript><style>{"[data-reveal]{opacity:1;transform:none}"}</style></noscript>
-        <TopBar site={site} />
-        <Header site={site} />
+        <TopBar common={common} />
+        <Header common={common} />
         <main className="flex-1 overflow-x-clip">{children}</main>
-        <Footer site={site} />
+        <Footer common={common} />
       </body>
     </html>
   );

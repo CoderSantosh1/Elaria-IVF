@@ -12,7 +12,7 @@ interface ContactSectionProps {
 export default function ContactSection({ contact, site }: ContactSectionProps) {
   const details = [
     { label: "Address", value: site.footerAddress.join(" ") },
-    { label: "Phone", value: site.phone, href: `tel:${site.phone.replace(/\s/g, "")}` },
+    { label: "Phone", value: site.phone, href: site.phoneHref },
     { label: "Email", value: site.email, href: `mailto:${site.email}` },
   ];
 

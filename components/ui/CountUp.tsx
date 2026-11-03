@@ -4,15 +4,13 @@ import { useEffect, useRef } from "react";
 
 const DURATION = 1800;
 
-export default function CountUp({ value }: { value: string }) {
+export default function CountUp({ value, suffix = "" }: { value: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const element = ref.current;
-    const match = value.match(/^(\d+)(.*)$/);
-    if (!element || !match || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (!element || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    const target = Number(match[1]);
     let frame = 0;
 
     const observer = new IntersectionObserver(
@@ -23,7 +21,7 @@ export default function CountUp({ value }: { value: string }) {
         const tick = (now: number) => {
           const progress = Math.min((now - startedAt) / DURATION, 1);
           const eased = 1 - Math.pow(1 - progress, 3);
-          element.textContent = `${Math.round(target * eased)}${match[2]}`;
+          element.textContent = `${Math.round(value * eased)}${suffix}`;
           if (progress < 1) frame = requestAnimationFrame(tick);
         };
         frame = requestAnimationFrame(tick);
@@ -36,7 +34,7 @@ export default function CountUp({ value }: { value: string }) {
       observer.disconnect();
       cancelAnimationFrame(frame);
     };
-  }, [value]);
+  }, [value, suffix]);
 
-  return <span ref={ref}>{value}</span>;
+  return <span ref={ref}>{value}{suffix}</span>;
 }

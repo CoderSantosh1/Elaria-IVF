@@ -5,16 +5,19 @@ import PageBanner from "@/components/ui/PageBanner";
 import data from "@/data/category.json";
 import type { SiteInfo } from "@/types";
 
-export const metadata: Metadata = { title: "Contact Us" };
+const { pageHeroes } = data.common;
+
+export const metadata: Metadata = { title: pageHeroes.contact.metaTitle };
 
 export default function ContactPage() {
-  const site = data.site as SiteInfo;
+  const site = data.common.site as SiteInfo;
+  const { Contact } = data.categories.ElariaIVF.sections;
 
   return (
     <>
-      <PageBanner title="Contact Us" />
-      <ContactSection contact={data.contact} site={site} />
-      <ClinicLocation location={data.contact.location} site={site} />
+      <PageBanner title={pageHeroes.contact.title} />
+      <ContactSection contact={Contact} site={site} />
+      <ClinicLocation location={Contact.location} site={site} />
     </>
   );
 }

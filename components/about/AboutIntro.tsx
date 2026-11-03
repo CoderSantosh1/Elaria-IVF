@@ -1,11 +1,16 @@
 import Image from "next/image";
-import type { AboutIntroContent } from "@/types";
+import type { AboutIntroContent, Stat } from "@/types";
 import CountUp from "@/components/ui/CountUp";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Reveal from "@/components/ui/Reveal";
 import TwoToneHeading from "@/components/ui/TwoToneHeading";
 
-export default function AboutIntro({ intro }: { intro: AboutIntroContent }) {
+interface AboutIntroProps {
+  intro: AboutIntroContent;
+  stats: Stat[];
+}
+
+export default function AboutIntro({ intro, stats }: AboutIntroProps) {
   return (
     <section className="pt-16 pb-12 lg:pt-24">
       <div className="container-site">
@@ -23,10 +28,10 @@ export default function AboutIntro({ intro }: { intro: AboutIntroContent }) {
         </div>
 
         <dl className="mt-14 grid grid-cols-2 gap-y-8 md:grid-cols-4">
-          {intro.stats.map((stat, index) => (
+          {stats.map((stat, index) => (
             <Reveal key={stat.label} delay={index * 120} className="flex flex-col-reverse items-center text-center md:border-l md:border-line md:first:border-0">
               <dt className="mt-2 text-base lg:text-lg">{stat.label}</dt>
-              <dd className="font-heading text-5xl font-semibold text-navy lg:text-6xl"><CountUp value={stat.value} /></dd>
+              <dd className="font-heading text-5xl font-semibold text-navy lg:text-6xl"><CountUp value={stat.value} suffix={stat.suffix} /></dd>
             </Reveal>
           ))}
         </dl>

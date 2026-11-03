@@ -8,14 +8,16 @@ import data from "@/data/category.json";
 import type { BlogPost } from "@/types";
 
 export default function HomePage() {
+  const { Home, About, Doctors, Blog } = data.categories.ElariaIVF.sections;
+
   return (
     <>
-      <Hero hero={data.home.hero} />
-      <AboutIntro intro={data.about.intro} />
-      <TreatmentShowcase content={data.home.treatments} />
-      <DoctorsSection intro={data.doctorsSection} doctors={data.doctors} />
-      <TestimonialsSection content={data.home.testimonials} />
-      <BlogSection intro={data.blogSection} posts={(data.blogs as BlogPost[]).slice(0, 3)} />
+      <Hero hero={Home.hero} />
+      <AboutIntro intro={About.intro} stats={data.common.stats} />
+      <TreatmentShowcase content={Home.treatments} />
+      <DoctorsSection intro={Doctors.intro} doctors={Doctors.items} />
+      <TestimonialsSection content={Home.testimonials} />
+      <BlogSection intro={Blog.intro} posts={(Blog.items as BlogPost[]).slice(0, 3)} />
     </>
   );
 }

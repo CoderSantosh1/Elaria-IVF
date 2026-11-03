@@ -5,14 +5,17 @@ import Reveal from "@/components/ui/Reveal";
 import SectionIntro from "@/components/ui/SectionIntro";
 import data from "@/data/category.json";
 
-export const metadata: Metadata = { title: "Success Stories" };
+const { pageHeroes } = data.common;
+
+export const metadata: Metadata = { title: pageHeroes.successStories.metaTitle };
 
 export default function SuccessStoriesPage() {
-  const { eyebrow, title, description, items } = data.storiesPage;
+  const { intro, items } = data.categories.ElariaIVF.sections.SuccessStories;
+  const { eyebrow, title, description } = intro;
 
   return (
     <>
-      <PageBanner title="Success Stories" />
+      <PageBanner title={pageHeroes.successStories.title} />
       <section className="py-16 lg:pt-24 lg:pb-28">
         <div className="container-site">
           <SectionIntro eyebrow={eyebrow} title={title} description={description} font="serif" />

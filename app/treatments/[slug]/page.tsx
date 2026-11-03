@@ -10,24 +10,26 @@ interface TreatmentPageProps {
 
 export const dynamicParams = false;
 
+const treatments = data.categories.ElariaIVF.sections.Treatments.items;
+
 export function generateStaticParams() {
-  return data.treatments.map(({ slug }) => ({ slug }));
+  return treatments.map(({ slug }) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: TreatmentPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const treatment = data.treatments.find((item) => item.slug === slug);
+  const treatment = treatments.find((item) => item.slug === slug);
   return { title: treatment?.name, description: treatment?.summary };
 }
 
 export default async function TreatmentPage({ params }: TreatmentPageProps) {
   const { slug } = await params;
-  const treatment = data.treatments.find((item) => item.slug === slug);
+  const treatment = treatments.find((item) => item.slug === slug);
   if (!treatment) notFound();
 
   return (
     <>
-      <PageBanner title="Treatments Details" />
+      <PageBanner title={data.common.pageHeroes.treatmentDetails.title} />
       <TreatmentDetail treatment={treatment} />
     </>
   );

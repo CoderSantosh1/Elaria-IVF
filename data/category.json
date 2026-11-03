@@ -1,24 +1,31 @@
 {
-  "site": {
-    "name": "Elaria IVF",
-    "logo": "/images/logo.png",
-    "tagline": "Compassionate care, advanced treatments, and personalized support to help you build your family and a brighter tomorrow.",
-    "email": "info@xyz.com",
-    "phone": "+1 0000000",
-    "address": "123 Ocean Drive, Miami Beach, FL 33139, USA",
-    "footerAddress": ["123 Ocean Drive, Miami Beach, FL 33139, USA"],
-    "hours": ["Mon – Sat", "9:00 AM – 6:00 PM"],
-    "copyright": "© 2026 Elaria IVF. All Rights Reserved. Powered by Lestow.",
-    "cta": { "label": "Book Appointment", "href": "/book-appointment" },
-    "socials": [
-      { "name": "facebook", "href": "https://www.facebook.com" },
-      { "name": "instagram", "href": "https://www.instagram.com" },
-      { "name": "youtube", "href": "https://www.youtube.com" },
-      { "name": "linkedin", "href": "https://www.linkedin.com" }
-    ],
+  "common": {
+    "site": {
+      "name": "Elaria IVF",
+      "logo": "/images/logo.png",
+      "tagline": "Compassionate care, advanced treatments, and personalized support to help you build your family and a brighter tomorrow.",
+      "email": "info@xyz.com",
+      "phone": "+1 0000000",
+      "address": "123 Ocean Drive, Miami Beach, FL 33139, USA",
+      "footerAddress": [
+        "123 Ocean Drive, Miami Beach, FL 33139, USA"
+      ],
+      "hours": [
+        "Mon – Sat",
+        "9:00 AM – 6:00 PM"
+      ],
+      "copyright": "© 2026 Elaria IVF. All Rights Reserved. Powered by Lestow.",
+      "phoneHref": "tel:+10000000"
+    },
     "navigation": [
-      { "label": "Home", "href": "/" },
-      { "label": "About Us", "href": "/about" },
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About Us",
+        "href": "/about"
+      },
       {
         "label": "Treatments",
         "href": "/treatments"
@@ -27,568 +34,928 @@
         "label": "Our Doctors",
         "href": "/doctors"
       },
-      { "label": "Success Stories", "href": "/success-stories" },
-      { "label": "Blog", "href": "/blog" },
-      { "label": "Contact", "href": "/contact" }
+      {
+        "label": "Success Stories",
+        "href": "/success-stories"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
     ],
     "quickLinks": [
-      { "label": "Home", "href": "/" },
-      { "label": "About Us", "href": "/about" },
-      { "label": "Our Services", "href": "/treatments" },
-      { "label": "Success Stories", "href": "/success-stories" },
-      { "label": "Blog", "href": "/blog" },
-      { "label": "Contact Us", "href": "/contact" }
-    ]
-  },
-  "home": {
-    "hero": {
-      "eyebrow": "IVF & Fertility Care",
-      "title": { "line1": "New Beginnings", "line2": "Brighter Tomorrows" },
-      "description": "Expert care, advanced fertility treatments and personalized support for your parenthood journey.",
-      "image": "/images/hero.jpg",
-      "imageAlt": "Smiling mother holding hands with her happy baby on a white bed",
-      "emergencyLabel": "Emergency care (24/7 support)",
-      "scheduleLabel": "Schedule a Visit",
-      "cta": { "label": "Book Appointment", "href": "/book-appointment" }
-    },
-    "treatments": {
-      "eyebrow": "Our Treatments",
-      "word": "TREATMENTS",
-      "lead": {
-        "title": { "line1": "Explore all", "line2": "Our Treatments" },
-        "description": "Comprehensive fertility solutions designed to support your unique journey. From advanced treatments to personalized care, we are here for every step of your parenthood journey.",
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About Us",
+        "href": "/about"
+      },
+      {
+        "label": "Our Services",
         "href": "/treatments"
       },
-      "cards": [
-        {
-          "title": "IVF Treatment",
-          "description": "Advanced IVF techniques to help you achieve your dream of parenthood with higher success rates.",
-          "href": "/treatments/ivf-treatment"
-        },
-        {
-          "title": "IUI Treatment",
-          "description": "A simple and effective fertility treatment to improve the chances of conception naturally.",
-          "href": "/treatments/iui-treatment"
-        },
-        {
-          "title": "Fertility Evaluation",
-          "description": "Comprehensive testing and diagnosis to identify the right treatment plan for your needs.",
-          "href": "/treatments"
-        },
-        {
-          "title": "Egg & Embryo Freezing",
-          "description": "Preserve your fertility for the future with advanced freezing techniques and expert care.",
-          "href": "/treatments/egg-freezing"
-        }
-      ]
-    },
-    "testimonials": {
-      "eyebrow": "Our Success Stories",
-      "title": { "line1": "Real Stories", "line2": "Brighter Tomorrows" },
-      "description": "Every journey is unique, and we are honoured to be a part of so many beautiful beginnings. Here are some stories of hope, care, and successful parenthood from our patients.",
-      "image": "/images/testimonial-mother.jpg",
-      "imageAlt": "Mother kissing her laughing baby on the cheek",
-      "items": [
-        {
-          "quote": "Our journey at Elaria IVF was filled with support, care, and positivity. The entire team made us feel comfortable and confident throughout the process. Today, we are happily parents to our little miracle.",
-          "name": "Neha & Rohit",
-          "role": "Proud Parents",
-          "avatar": "/images/avatars/neha-rohit.jpg"
-        },
-        {
-          "quote": "After years of struggle, we finally found hope at Elaria IVF. The doctors were patient, understanding, and truly caring. We are grateful for their expertise and constant guidance.",
-          "name": "Priya & Karan",
-          "role": "Proud Parents",
-          "avatar": "/images/avatars/priya-karan.jpg"
-        },
-        {
-          "quote": "From the very first consultation to the final step, the team at Elaria IVF stood by us. Their personalized approach and genuine care made all the difference. We are now living our dream of parenthood.",
-          "name": "Ayesha & Imran",
-          "role": "Proud Parents",
-          "avatar": "/images/avatars/ayesha-imran.jpg"
-        }
-      ]
-    }
-  },
-  "about": {
-    "intro": {
-      "eyebrow": "About Elaria IVF",
-      "title": { "line1": "Trusted Care for", "line2": "Brighter Tomorrows" },
-      "description": "At Elaria IVF, we combine advanced fertility treatments with compassionate care to support you at every step of your parenthood journey.",
-      "subheading": "Always Advancing Patient Care",
-      "body": "From your first consultation to successful parenthood, we offer personalized treatment plans, expert guidance, and a dedicated team focused on your well-being. Our commitment is to provide care, compassion, and medical excellence for every individual.",
-      "image": "/images/about-couple.jpg",
-      "imageAlt": "Couple smiling during a consultation with a fertility doctor",
-      "stats": [
-        { "value": "40+", "label": "Fertility Specialists" },
-        { "value": "20+", "label": "Departments" },
-        { "value": "15+", "label": "Years of Experience" },
-        { "value": "98%", "label": "Patient Satisfaction" }
-      ]
-    },
-    "why": {
-      "eyebrow": "Why Choose Us",
-      "title": { "line1": "Personalized Care", "line2": "for Brighter Tomorrows" },
-      "description": "At Elaria IVF, we focus on personalized treatments, expert care, and unwavering support to help you build your family.",
-      "image": "/images/why-mother.jpg",
-      "imageAlt": "Mother kissing her smiling baby",
-      "features": [
-        { "title": "Expert Specialists", "description": "Experienced fertility experts with a patient-first approach." },
-        { "title": "Personalized Treatment", "description": "Tailored care plans designed around your unique needs." },
-        { "title": "Advanced Technology", "description": "Modern IVF facilities for safe and effective care." },
-        { "title": "Compassionate Support", "description": "We're with you at every step of your journey." }
-      ]
-    }
-  },
-  "treatmentsPage": {
-    "title": { "line1": "Personalized Fertility", "line2": "Care for Every Journey" },
-    "description": "Advanced treatments and compassionate care to help you take the next step toward parenthood.",
-    "perPage": 4
-  },
-  "treatments": [
-    {
-      "slug": "ivf-treatment",
-      "name": "IVF Treatment",
-      "title": { "line1": "IVF", "line2": "Treatment" },
-      "summary": "Advanced IVF care with personalized plans for higher success rates.",
-      "image": "/images/treatments/ivf.jpg",
-      "imageAlt": "Patient viewing an ultrasound scan with her doctor",
-      "heroImage": "/images/treatments/lab-hero.jpg",
-      "heroDescription": "A trusted fertility treatment designed to help individuals and couples achieve their dream of parenthood.",
-      "aboutTitle": { "line1": "What is", "line2": "IVF Treatment?" },
-      "aboutBody": "In Vitro Fertilization (IVF) is an advanced fertility treatment where an egg and sperm are combined in a laboratory to create an embryo, which is then transferred to the uterus to help achieve pregnancy.",
-      "aboutImage": "/images/treatments/pregnancy.jpg",
-      "benefits": [
-        { "title": "Higher Success Rates", "description": "Advanced techniques for better chances of pregnancy." },
-        { "title": "Personalized Care", "description": "Treatment plans tailored to your unique needs." }
-      ],
-      "processTitle": { "line1": "How IVF", "line2": "Works?" },
-      "process": [
-        { "title": "Ovarian Stimulation", "description": "Medications to stimulate egg production." },
-        { "title": "Egg Retrieval", "description": "Eggs are collected from the ovaries." },
-        { "title": "Fertilization", "description": "Eggs and sperm are combined in the lab." },
-        { "title": "Embryo Transfer", "description": "A healthy embryo is placed in the uterus." }
-      ]
-    },
-    {
-      "slug": "iui-treatment",
-      "name": "IUI Treatment",
-      "title": { "line1": "IUI", "line2": "Treatment" },
-      "summary": "A simpler and effective fertility treatment option.",
-      "image": "/images/treatments/iui.jpg",
-      "imageAlt": "Laboratory pipette above a culture dish",
-      "heroImage": "/images/treatments/iui.jpg",
-      "heroDescription": "A gentle, minimally invasive option that places prepared sperm closer to the egg at the right time.",
-      "aboutTitle": { "line1": "What is", "line2": "IUI Treatment?" },
-      "aboutBody": "Intrauterine Insemination (IUI) is a fertility treatment in which washed and concentrated sperm are placed directly into the uterus around the time of ovulation, increasing the chance of the sperm reaching the egg.",
-      "aboutImage": "/images/treatments/pregnancy.jpg",
-      "benefits": [
-        { "title": "Minimally Invasive", "description": "A short, simple procedure performed in the clinic." },
-        { "title": "Well-Timed Care", "description": "Scheduled closely around your ovulation cycle." }
-      ],
-      "processTitle": { "line1": "How IUI", "line2": "Works?" },
-      "process": [
-        { "title": "Cycle Monitoring", "description": "Your ovulation is tracked with scans and tests." },
-        { "title": "Sperm Preparation", "description": "A sample is washed and concentrated in the lab." },
-        { "title": "Insemination", "description": "Prepared sperm is placed into the uterus." },
-        { "title": "Pregnancy Test", "description": "A test confirms the outcome about two weeks later." }
-      ]
-    },
-    {
-      "slug": "icsi-treatment",
-      "name": "ICSI Treatment",
-      "title": { "line1": "ICSI", "line2": "Treatment" },
-      "summary": "Advanced technique for complex fertility challenges.",
-      "image": "/images/treatments/icsi.jpg",
-      "imageAlt": "Micro-injection equipment positioned over a culture dish",
-      "heroImage": "/images/treatments/icsi.jpg",
-      "heroDescription": "A precise laboratory technique that supports fertilization when sperm-related challenges are present.",
-      "aboutTitle": { "line1": "What is", "line2": "ICSI Treatment?" },
-      "aboutBody": "Intracytoplasmic Sperm Injection (ICSI) is a specialized form of IVF in which an embryologist injects a single selected sperm directly into each mature egg to support fertilization.",
-      "aboutImage": "/images/treatments/pregnancy.jpg",
-      "benefits": [
-        { "title": "Targeted Fertilization", "description": "Helps when sperm count or movement is low." },
-        { "title": "Expert Embryology", "description": "Each injection is carried out by skilled specialists." }
-      ],
-      "processTitle": { "line1": "How ICSI", "line2": "Works?" },
-      "process": [
-        { "title": "Egg Retrieval", "description": "Mature eggs are collected after stimulation." },
-        { "title": "Sperm Selection", "description": "A healthy sperm is selected for each egg." },
-        { "title": "Injection", "description": "Sperm is injected directly into the egg." },
-        { "title": "Embryo Transfer", "description": "A developing embryo is placed in the uterus." }
-      ]
-    },
-    {
-      "slug": "egg-freezing",
-      "name": "Egg Freezing",
-      "title": { "line1": "Egg", "line2": "Freezing" },
-      "summary": "Preserve your fertility for future possibilities.",
-      "image": "/images/treatments/egg-freezing.jpg",
-      "imageAlt": "Gloved hand lifting a sample from cryogenic storage",
-      "heroImage": "/images/treatments/egg-freezing.jpg",
-      "heroDescription": "Keep your options open by storing your eggs safely for when you are ready to start a family.",
-      "aboutTitle": { "line1": "What is", "line2": "Egg Freezing?" },
-      "aboutBody": "Egg freezing, or oocyte cryopreservation, involves collecting mature eggs, rapidly freezing them through vitrification, and storing them so they can be thawed and used in fertility treatment later.",
-      "aboutImage": "/images/treatments/pregnancy.jpg",
-      "benefits": [
-        { "title": "Future Flexibility", "description": "Plan parenthood on a timeline that suits you." },
-        { "title": "Safe Storage", "description": "Eggs are monitored in secure cryogenic storage." }
-      ],
-      "processTitle": { "line1": "How Egg Freezing", "line2": "Works?" },
-      "process": [
-        { "title": "Consultation", "description": "Tests help plan the right approach for you." },
-        { "title": "Stimulation", "description": "Medications help several eggs mature." },
-        { "title": "Egg Retrieval", "description": "Mature eggs are collected from the ovaries." },
-        { "title": "Vitrification", "description": "Eggs are rapidly frozen and safely stored." }
-      ]
-    },
-    {
-      "slug": "fertility-preservation",
-      "name": "Fertility Preservation",
-      "title": { "line1": "Fertility", "line2": "Preservation" },
-      "summary": "Protect your reproductive health for tomorrow.",
-      "image": "/images/treatments/fertility-preservation.jpg",
-      "imageAlt": "Expectant mother resting her hands on her belly",
-      "heroImage": "/images/treatments/fertility-preservation.jpg",
-      "heroDescription": "Thoughtful options for protecting your fertility before medical treatment or life changes.",
-      "aboutTitle": { "line1": "What is", "line2": "Fertility Preservation?" },
-      "aboutBody": "Fertility preservation includes freezing eggs, sperm, or embryos for later use. It can be a valuable option before treatments that may affect fertility, or for anyone who wishes to delay parenthood.",
-      "aboutImage": "/images/treatments/pregnancy.jpg",
-      "benefits": [
-        { "title": "Multiple Options", "description": "Egg, sperm, and embryo freezing are available." },
-        { "title": "Guided Decisions", "description": "Specialists help you choose what suits your situation." }
-      ],
-      "processTitle": { "line1": "How Preservation", "line2": "Works?" },
-      "process": [
-        { "title": "Assessment", "description": "Your health and goals are carefully reviewed." },
-        { "title": "Planning", "description": "We recommend the most suitable method." },
-        { "title": "Collection", "description": "Eggs, sperm, or embryos are prepared." },
-        { "title": "Storage", "description": "Samples are frozen and securely stored." }
-      ]
-    },
-    {
-      "slug": "male-fertility-treatment",
-      "name": "Male Fertility Treatment",
-      "title": { "line1": "Male Fertility", "line2": "Treatment" },
-      "summary": "Expert care for male reproductive health concerns.",
-      "image": "/images/treatments/male-fertility.jpg",
-      "imageAlt": "Man holding a sample container in a clinic",
-      "heroImage": "/images/treatments/male-fertility.jpg",
-      "heroDescription": "Discreet evaluation and treatment to understand and address male fertility concerns.",
-      "aboutTitle": { "line1": "What is", "line2": "Male Fertility Care?" },
-      "aboutBody": "Male fertility care begins with a semen analysis and medical evaluation to identify possible causes. Depending on the findings, care may include lifestyle guidance, medication, procedures, or assisted reproduction.",
-      "aboutImage": "/images/treatments/pregnancy.jpg",
-      "benefits": [
-        { "title": "Accurate Diagnosis", "description": "Detailed testing helps find the underlying cause." },
-        { "title": "Discreet Support", "description": "Respectful care with privacy at every stage." }
-      ],
-      "processTitle": { "line1": "How Male Care", "line2": "Works?" },
-      "process": [
-        { "title": "Consultation", "description": "Your medical history is discussed in private." },
-        { "title": "Semen Analysis", "description": "Lab tests assess sperm health." },
-        { "title": "Treatment Plan", "description": "Options are chosen around your results." },
-        { "title": "Follow-Up", "description": "Progress is reviewed with your specialist." }
-      ]
-    }
-  ],
-  "doctorsSection": {
-    "eyebrow": "Our Doctors",
-    "title": { "line1": "Meet Our", "line2": "Expert Doctors" },
-    "description": "Our team of highly experienced fertility specialists is committed to providing personalized care with compassion, expertise, and the latest medical advancements to support your parenthood journey."
-  },
-  "doctors": [
-    {
-      "slug": "ananya-sharma",
-      "name": "Dr. Ananya Sharma",
-      "specialty": "Fertility Specialist",
-      "qualifications": ["MBBS, MS (Obstetrics & Gynaecology)", "Fertility Specialist"],
-      "image": "/images/doctors/ananya-sharma.jpg"
-    },
-    {
-      "slug": "rohit-mehta",
-      "name": "Dr. Rohit Mehta",
-      "specialty": "Reproductive Endocrinologist",
-      "qualifications": ["MBBS, MD (Reproductive Medicine)", "Fertility & Hormonal Disorders"],
-      "image": "/images/doctors/rohit-mehta.jpg"
-    },
-    {
-      "slug": "priya-kapoor",
-      "name": "Dr. Priya Kapoor",
-      "specialty": "IVF Specialist",
-      "qualifications": ["MBBS, DGO, Fellowship in IVF and Reproductive Medicine", "IVF & Infertility Specialist"],
-      "image": "/images/doctors/priya-kapoor.jpg"
-    },
-    {
-      "slug": "kunal-verma",
-      "name": "Dr. Kunal Verma",
-      "specialty": "Embryologist",
-      "qualifications": ["MSc (Clinical Embryology)", "Senior Embryologist"],
-      "image": "/images/doctors/kunal-verma.jpg"
-    }
-  ],
-  "storiesPage": {
-    "eyebrow": "Success Stories",
-    "title": { "line1": "Real Stories,", "line2": "Brighter Tomorrows" },
-    "description": "Hear from our patients who turned their hope into happiness with our personalized fertility care.",
-    "items": [
       {
-        "quote": "After years of trying, we finally welcomed our little one. The team was supportive and patient throughout our journey.",
-        "name": "Priya & Rohit",
-        "treatment": "IVF Treatment",
-        "image": "/images/stories/priya-rohit.jpg"
+        "label": "Success Stories",
+        "href": "/success-stories"
       },
       {
-        "quote": "The care and guidance we received made all the difference. Today we are excited for our new beginning.",
-        "name": "Neha & Karan",
-        "treatment": "IUI Treatment",
-        "image": "/images/stories/neha-karan.jpg"
+        "label": "Blog",
+        "href": "/blog"
       },
       {
-        "quote": "We are grateful for the professional care and constant support. Our dream of becoming parents is now a reality.",
-        "name": "Aditi & Sameer",
-        "treatment": "ICSI Treatment",
-        "image": "/images/stories/aditi-sameer.jpg"
+        "label": "Contact Us",
+        "href": "/contact"
+      }
+    ],
+    "socials": [
+      {
+        "name": "facebook",
+        "href": "https://www.facebook.com"
       },
       {
-        "quote": "The team made our fertility journey smooth and stress-free. We couldn't have asked for a better experience.",
-        "name": "Meera & Arjun",
-        "treatment": "Fertility Preservation",
-        "image": "/images/stories/meera-arjun.jpg"
+        "name": "instagram",
+        "href": "https://www.instagram.com"
+      },
+      {
+        "name": "youtube",
+        "href": "https://www.youtube.com"
+      },
+      {
+        "name": "linkedin",
+        "href": "https://www.linkedin.com"
+      }
+    ],
+    "cta": {
+      "label": "Book Appointment",
+      "href": "/book-appointment"
+    },
+    "pageHeroes": {
+      "about": {
+        "metaTitle": "About",
+        "title": "About"
+      },
+      "treatments": {
+        "metaTitle": "Treatments",
+        "title": "Treatments"
+      },
+      "treatmentDetails": {
+        "title": "Treatments Details"
+      },
+      "doctors": {
+        "metaTitle": "Doctors",
+        "title": "Doctors"
+      },
+      "successStories": {
+        "metaTitle": "Success Stories",
+        "title": "Success Stories"
+      },
+      "blog": {
+        "metaTitle": "Blog",
+        "title": "Blogs"
+      },
+      "blogDetails": {
+        "title": "Blogs"
+      },
+      "contact": {
+        "metaTitle": "Contact Us",
+        "title": "Contact Us"
+      },
+      "bookAppointment": {
+        "metaTitle": "Book Appointment",
+        "title": "Book Appointment"
+      }
+    },
+    "stats": [
+      {
+        "value": 40,
+        "suffix": "+",
+        "label": "Fertility Specialists"
+      },
+      {
+        "value": 20,
+        "suffix": "+",
+        "label": "Departments"
+      },
+      {
+        "value": 15,
+        "suffix": "+",
+        "label": "Years of Experience"
+      },
+      {
+        "value": 98,
+        "suffix": "%",
+        "label": "Patient Satisfaction"
       }
     ]
   },
-  "blogSection": {
-    "title": { "line1": "Latest updates and", "line2": "expert fertility insights" },
-    "description": "Stay informed with expert advice, patient stories, and the latest developments in fertility and reproductive health to support your journey.",
-    "perPage": 3
-  },
-  "blogs": [
-    {
-      "slug": "lifestyle-choices-chances-of-conception",
-      "category": "Fertility Insights",
-      "tag": "Fertility Care",
-      "title": "How lifestyle choices can improve your chances of conception",
-      "headline": { "line1": "How Lifestyle Choices", "line2": "Can Improve Conception" },
-      "date": "Oct 16, 2025",
-      "comments": "2 Comments",
-      "author": "Dr. Ananya Sharma",
-      "excerpt": "Learn how simple lifestyle changes can support your fertility and overall reproductive health.",
-      "image": "/images/blog/lifestyle.jpg",
-      "imageAlt": "Mother kissing her laughing baby",
-      "heroImage": "/images/blog/lifestyle.jpg",
-      "intro": "Everyday habits can play a meaningful role in reproductive health. Small, steady changes often support both general well-being and fertility for you and your partner.",
-      "sections": [
-        {
-          "heading": "Nourish Your Body",
-          "body": "A balanced diet with vegetables, fruit, whole grains, and lean protein supports overall health. Your doctor may also recommend a folic acid supplement if you are planning a pregnancy."
+  "categories": {
+    "ElariaIVF": {
+      "sections": {
+        "Home": {
+          "hero": {
+            "eyebrow": "IVF & Fertility Care",
+            "title": {
+              "line1": "New Beginnings",
+              "line2": "Brighter Tomorrows"
+            },
+            "description": "Expert care, advanced fertility treatments and personalized support for your parenthood journey.",
+            "image": "/images/hero.jpg",
+            "imageAlt": "Smiling mother holding hands with her happy baby on a white bed",
+            "emergencyLabel": "Emergency care (24/7 support)",
+            "scheduleLabel": "Schedule a Visit",
+            "cta": {
+              "label": "Book Appointment",
+              "href": "/book-appointment"
+            }
+          },
+          "treatments": {
+            "eyebrow": "Our Treatments",
+            "word": "TREATMENTS",
+            "lead": {
+              "title": {
+                "line1": "Explore all",
+                "line2": "Our Treatments"
+              },
+              "description": "Comprehensive fertility solutions designed to support your unique journey. From advanced treatments to personalized care, we are here for every step of your parenthood journey.",
+              "href": "/treatments"
+            },
+            "cards": [
+              {
+                "title": "IVF Treatment",
+                "description": "Advanced IVF techniques to help you achieve your dream of parenthood with higher success rates.",
+                "href": "/treatments/ivf-treatment"
+              },
+              {
+                "title": "IUI Treatment",
+                "description": "A simple and effective fertility treatment to improve the chances of conception naturally.",
+                "href": "/treatments/iui-treatment"
+              },
+              {
+                "title": "Fertility Evaluation",
+                "description": "Comprehensive testing and diagnosis to identify the right treatment plan for your needs.",
+                "href": "/treatments"
+              },
+              {
+                "title": "Egg & Embryo Freezing",
+                "description": "Preserve your fertility for the future with advanced freezing techniques and expert care.",
+                "href": "/treatments/egg-freezing"
+              }
+            ]
+          },
+          "testimonials": {
+            "eyebrow": "Our Success Stories",
+            "title": {
+              "line1": "Real Stories",
+              "line2": "Brighter Tomorrows"
+            },
+            "description": "Every journey is unique, and we are honoured to be a part of so many beautiful beginnings. Here are some stories of hope, care, and successful parenthood from our patients.",
+            "image": "/images/testimonial-mother.jpg",
+            "imageAlt": "Mother kissing her laughing baby on the cheek",
+            "items": [
+              {
+                "quote": "Our journey at Elaria IVF was filled with support, care, and positivity. The entire team made us feel comfortable and confident throughout the process. Today, we are happily parents to our little miracle.",
+                "name": "Neha & Rohit",
+                "role": "Proud Parents",
+                "avatar": "/images/avatars/neha-rohit.jpg"
+              },
+              {
+                "quote": "After years of struggle, we finally found hope at Elaria IVF. The doctors were patient, understanding, and truly caring. We are grateful for their expertise and constant guidance.",
+                "name": "Priya & Karan",
+                "role": "Proud Parents",
+                "avatar": "/images/avatars/priya-karan.jpg"
+              },
+              {
+                "quote": "From the very first consultation to the final step, the team at Elaria IVF stood by us. Their personalized approach and genuine care made all the difference. We are now living our dream of parenthood.",
+                "name": "Ayesha & Imran",
+                "role": "Proud Parents",
+                "avatar": "/images/avatars/ayesha-imran.jpg"
+              }
+            ]
+          }
         },
-        {
-          "heading": "Build Healthy Routines",
-          "body": "Moderate exercise, restful sleep, and limiting alcohol and tobacco can all help. If you have concerns or have been trying for some time, a fertility specialist can guide you on next steps.",
-          "image": "/images/blog/couple-consult.jpg",
-          "imageAlt": "Couple smiling while talking with their doctor"
+        "About": {
+          "intro": {
+            "eyebrow": "About Elaria IVF",
+            "title": {
+              "line1": "Trusted Care for",
+              "line2": "Brighter Tomorrows"
+            },
+            "description": "At Elaria IVF, we combine advanced fertility treatments with compassionate care to support you at every step of your parenthood journey.",
+            "subheading": "Always Advancing Patient Care",
+            "body": "From your first consultation to successful parenthood, we offer personalized treatment plans, expert guidance, and a dedicated team focused on your well-being. Our commitment is to provide care, compassion, and medical excellence for every individual.",
+            "image": "/images/about-couple.jpg",
+            "imageAlt": "Couple smiling during a consultation with a fertility doctor"
+          },
+          "why": {
+            "eyebrow": "Why Choose Us",
+            "title": {
+              "line1": "Personalized Care",
+              "line2": "for Brighter Tomorrows"
+            },
+            "description": "At Elaria IVF, we focus on personalized treatments, expert care, and unwavering support to help you build your family.",
+            "image": "/images/why-mother.jpg",
+            "imageAlt": "Mother kissing her smiling baby",
+            "features": [
+              {
+                "title": "Expert Specialists",
+                "description": "Experienced fertility experts with a patient-first approach."
+              },
+              {
+                "title": "Personalized Treatment",
+                "description": "Tailored care plans designed around your unique needs."
+              },
+              {
+                "title": "Advanced Technology",
+                "description": "Modern IVF facilities for safe and effective care."
+              },
+              {
+                "title": "Compassionate Support",
+                "description": "We're with you at every step of your journey."
+              }
+            ]
+          }
+        },
+        "Treatments": {
+          "intro": {
+            "title": {
+              "line1": "Personalized Fertility",
+              "line2": "Care for Every Journey"
+            },
+            "description": "Advanced treatments and compassionate care to help you take the next step toward parenthood."
+          },
+          "perPage": 4,
+          "items": [
+            {
+              "slug": "ivf-treatment",
+              "name": "IVF Treatment",
+              "title": {
+                "line1": "IVF",
+                "line2": "Treatment"
+              },
+              "summary": "Advanced IVF care with personalized plans for higher success rates.",
+              "image": "/images/treatments/ivf.jpg",
+              "imageAlt": "Patient viewing an ultrasound scan with her doctor",
+              "heroImage": "/images/treatments/lab-hero.jpg",
+              "heroDescription": "A trusted fertility treatment designed to help individuals and couples achieve their dream of parenthood.",
+              "aboutTitle": {
+                "line1": "What is",
+                "line2": "IVF Treatment?"
+              },
+              "aboutBody": "In Vitro Fertilization (IVF) is an advanced fertility treatment where an egg and sperm are combined in a laboratory to create an embryo, which is then transferred to the uterus to help achieve pregnancy.",
+              "aboutImage": "/images/treatments/pregnancy.jpg",
+              "benefits": [
+                {
+                  "title": "Higher Success Rates",
+                  "description": "Advanced techniques for better chances of pregnancy."
+                },
+                {
+                  "title": "Personalized Care",
+                  "description": "Treatment plans tailored to your unique needs."
+                }
+              ],
+              "processTitle": {
+                "line1": "How IVF",
+                "line2": "Works?"
+              },
+              "process": [
+                {
+                  "title": "Ovarian Stimulation",
+                  "description": "Medications to stimulate egg production."
+                },
+                {
+                  "title": "Egg Retrieval",
+                  "description": "Eggs are collected from the ovaries."
+                },
+                {
+                  "title": "Fertilization",
+                  "description": "Eggs and sperm are combined in the lab."
+                },
+                {
+                  "title": "Embryo Transfer",
+                  "description": "A healthy embryo is placed in the uterus."
+                }
+              ]
+            },
+            {
+              "slug": "iui-treatment",
+              "name": "IUI Treatment",
+              "title": {
+                "line1": "IUI",
+                "line2": "Treatment"
+              },
+              "summary": "A simpler and effective fertility treatment option.",
+              "image": "/images/treatments/iui.jpg",
+              "imageAlt": "Laboratory pipette above a culture dish",
+              "heroImage": "/images/treatments/iui.jpg",
+              "heroDescription": "A gentle, minimally invasive option that places prepared sperm closer to the egg at the right time.",
+              "aboutTitle": {
+                "line1": "What is",
+                "line2": "IUI Treatment?"
+              },
+              "aboutBody": "Intrauterine Insemination (IUI) is a fertility treatment in which washed and concentrated sperm are placed directly into the uterus around the time of ovulation, increasing the chance of the sperm reaching the egg.",
+              "aboutImage": "/images/treatments/pregnancy.jpg",
+              "benefits": [
+                {
+                  "title": "Minimally Invasive",
+                  "description": "A short, simple procedure performed in the clinic."
+                },
+                {
+                  "title": "Well-Timed Care",
+                  "description": "Scheduled closely around your ovulation cycle."
+                }
+              ],
+              "processTitle": {
+                "line1": "How IUI",
+                "line2": "Works?"
+              },
+              "process": [
+                {
+                  "title": "Cycle Monitoring",
+                  "description": "Your ovulation is tracked with scans and tests."
+                },
+                {
+                  "title": "Sperm Preparation",
+                  "description": "A sample is washed and concentrated in the lab."
+                },
+                {
+                  "title": "Insemination",
+                  "description": "Prepared sperm is placed into the uterus."
+                },
+                {
+                  "title": "Pregnancy Test",
+                  "description": "A test confirms the outcome about two weeks later."
+                }
+              ]
+            },
+            {
+              "slug": "icsi-treatment",
+              "name": "ICSI Treatment",
+              "title": {
+                "line1": "ICSI",
+                "line2": "Treatment"
+              },
+              "summary": "Advanced technique for complex fertility challenges.",
+              "image": "/images/treatments/icsi.jpg",
+              "imageAlt": "Micro-injection equipment positioned over a culture dish",
+              "heroImage": "/images/treatments/icsi.jpg",
+              "heroDescription": "A precise laboratory technique that supports fertilization when sperm-related challenges are present.",
+              "aboutTitle": {
+                "line1": "What is",
+                "line2": "ICSI Treatment?"
+              },
+              "aboutBody": "Intracytoplasmic Sperm Injection (ICSI) is a specialized form of IVF in which an embryologist injects a single selected sperm directly into each mature egg to support fertilization.",
+              "aboutImage": "/images/treatments/pregnancy.jpg",
+              "benefits": [
+                {
+                  "title": "Targeted Fertilization",
+                  "description": "Helps when sperm count or movement is low."
+                },
+                {
+                  "title": "Expert Embryology",
+                  "description": "Each injection is carried out by skilled specialists."
+                }
+              ],
+              "processTitle": {
+                "line1": "How ICSI",
+                "line2": "Works?"
+              },
+              "process": [
+                {
+                  "title": "Egg Retrieval",
+                  "description": "Mature eggs are collected after stimulation."
+                },
+                {
+                  "title": "Sperm Selection",
+                  "description": "A healthy sperm is selected for each egg."
+                },
+                {
+                  "title": "Injection",
+                  "description": "Sperm is injected directly into the egg."
+                },
+                {
+                  "title": "Embryo Transfer",
+                  "description": "A developing embryo is placed in the uterus."
+                }
+              ]
+            },
+            {
+              "slug": "egg-freezing",
+              "name": "Egg Freezing",
+              "title": {
+                "line1": "Egg",
+                "line2": "Freezing"
+              },
+              "summary": "Preserve your fertility for future possibilities.",
+              "image": "/images/treatments/egg-freezing.jpg",
+              "imageAlt": "Gloved hand lifting a sample from cryogenic storage",
+              "heroImage": "/images/treatments/egg-freezing.jpg",
+              "heroDescription": "Keep your options open by storing your eggs safely for when you are ready to start a family.",
+              "aboutTitle": {
+                "line1": "What is",
+                "line2": "Egg Freezing?"
+              },
+              "aboutBody": "Egg freezing, or oocyte cryopreservation, involves collecting mature eggs, rapidly freezing them through vitrification, and storing them so they can be thawed and used in fertility treatment later.",
+              "aboutImage": "/images/treatments/pregnancy.jpg",
+              "benefits": [
+                {
+                  "title": "Future Flexibility",
+                  "description": "Plan parenthood on a timeline that suits you."
+                },
+                {
+                  "title": "Safe Storage",
+                  "description": "Eggs are monitored in secure cryogenic storage."
+                }
+              ],
+              "processTitle": {
+                "line1": "How Egg Freezing",
+                "line2": "Works?"
+              },
+              "process": [
+                {
+                  "title": "Consultation",
+                  "description": "Tests help plan the right approach for you."
+                },
+                {
+                  "title": "Stimulation",
+                  "description": "Medications help several eggs mature."
+                },
+                {
+                  "title": "Egg Retrieval",
+                  "description": "Mature eggs are collected from the ovaries."
+                },
+                {
+                  "title": "Vitrification",
+                  "description": "Eggs are rapidly frozen and safely stored."
+                }
+              ]
+            },
+            {
+              "slug": "fertility-preservation",
+              "name": "Fertility Preservation",
+              "title": {
+                "line1": "Fertility",
+                "line2": "Preservation"
+              },
+              "summary": "Protect your reproductive health for tomorrow.",
+              "image": "/images/treatments/fertility-preservation.jpg",
+              "imageAlt": "Expectant mother resting her hands on her belly",
+              "heroImage": "/images/treatments/fertility-preservation.jpg",
+              "heroDescription": "Thoughtful options for protecting your fertility before medical treatment or life changes.",
+              "aboutTitle": {
+                "line1": "What is",
+                "line2": "Fertility Preservation?"
+              },
+              "aboutBody": "Fertility preservation includes freezing eggs, sperm, or embryos for later use. It can be a valuable option before treatments that may affect fertility, or for anyone who wishes to delay parenthood.",
+              "aboutImage": "/images/treatments/pregnancy.jpg",
+              "benefits": [
+                {
+                  "title": "Multiple Options",
+                  "description": "Egg, sperm, and embryo freezing are available."
+                },
+                {
+                  "title": "Guided Decisions",
+                  "description": "Specialists help you choose what suits your situation."
+                }
+              ],
+              "processTitle": {
+                "line1": "How Preservation",
+                "line2": "Works?"
+              },
+              "process": [
+                {
+                  "title": "Assessment",
+                  "description": "Your health and goals are carefully reviewed."
+                },
+                {
+                  "title": "Planning",
+                  "description": "We recommend the most suitable method."
+                },
+                {
+                  "title": "Collection",
+                  "description": "Eggs, sperm, or embryos are prepared."
+                },
+                {
+                  "title": "Storage",
+                  "description": "Samples are frozen and securely stored."
+                }
+              ]
+            },
+            {
+              "slug": "male-fertility-treatment",
+              "name": "Male Fertility Treatment",
+              "title": {
+                "line1": "Male Fertility",
+                "line2": "Treatment"
+              },
+              "summary": "Expert care for male reproductive health concerns.",
+              "image": "/images/treatments/male-fertility.jpg",
+              "imageAlt": "Man holding a sample container in a clinic",
+              "heroImage": "/images/treatments/male-fertility.jpg",
+              "heroDescription": "Discreet evaluation and treatment to understand and address male fertility concerns.",
+              "aboutTitle": {
+                "line1": "What is",
+                "line2": "Male Fertility Care?"
+              },
+              "aboutBody": "Male fertility care begins with a semen analysis and medical evaluation to identify possible causes. Depending on the findings, care may include lifestyle guidance, medication, procedures, or assisted reproduction.",
+              "aboutImage": "/images/treatments/pregnancy.jpg",
+              "benefits": [
+                {
+                  "title": "Accurate Diagnosis",
+                  "description": "Detailed testing helps find the underlying cause."
+                },
+                {
+                  "title": "Discreet Support",
+                  "description": "Respectful care with privacy at every stage."
+                }
+              ],
+              "processTitle": {
+                "line1": "How Male Care",
+                "line2": "Works?"
+              },
+              "process": [
+                {
+                  "title": "Consultation",
+                  "description": "Your medical history is discussed in private."
+                },
+                {
+                  "title": "Semen Analysis",
+                  "description": "Lab tests assess sperm health."
+                },
+                {
+                  "title": "Treatment Plan",
+                  "description": "Options are chosen around your results."
+                },
+                {
+                  "title": "Follow-Up",
+                  "description": "Progress is reviewed with your specialist."
+                }
+              ]
+            }
+          ]
+        },
+        "Doctors": {
+          "intro": {
+            "eyebrow": "Our Doctors",
+            "title": {
+              "line1": "Meet Our",
+              "line2": "Expert Doctors"
+            },
+            "description": "Our team of highly experienced fertility specialists is committed to providing personalized care with compassion, expertise, and the latest medical advancements to support your parenthood journey."
+          },
+          "items": [
+            {
+              "slug": "ananya-sharma",
+              "name": "Dr. Ananya Sharma",
+              "specialty": "Fertility Specialist",
+              "qualifications": [
+                "MBBS, MS (Obstetrics & Gynaecology)",
+                "Fertility Specialist"
+              ],
+              "image": "/images/doctors/ananya-sharma.jpg"
+            },
+            {
+              "slug": "rohit-mehta",
+              "name": "Dr. Rohit Mehta",
+              "specialty": "Reproductive Endocrinologist",
+              "qualifications": [
+                "MBBS, MD (Reproductive Medicine)",
+                "Fertility & Hormonal Disorders"
+              ],
+              "image": "/images/doctors/rohit-mehta.jpg"
+            },
+            {
+              "slug": "priya-kapoor",
+              "name": "Dr. Priya Kapoor",
+              "specialty": "IVF Specialist",
+              "qualifications": [
+                "MBBS, DGO, Fellowship in IVF and Reproductive Medicine",
+                "IVF & Infertility Specialist"
+              ],
+              "image": "/images/doctors/priya-kapoor.jpg"
+            },
+            {
+              "slug": "kunal-verma",
+              "name": "Dr. Kunal Verma",
+              "specialty": "Embryologist",
+              "qualifications": [
+                "MSc (Clinical Embryology)",
+                "Senior Embryologist"
+              ],
+              "image": "/images/doctors/kunal-verma.jpg"
+            }
+          ]
+        },
+        "SuccessStories": {
+          "intro": {
+            "eyebrow": "Success Stories",
+            "title": {
+              "line1": "Real Stories,",
+              "line2": "Brighter Tomorrows"
+            },
+            "description": "Hear from our patients who turned their hope into happiness with our personalized fertility care."
+          },
+          "items": [
+            {
+              "quote": "After years of trying, we finally welcomed our little one. The team was supportive and patient throughout our journey.",
+              "name": "Priya & Rohit",
+              "treatment": "IVF Treatment",
+              "image": "/images/stories/priya-rohit.jpg"
+            },
+            {
+              "quote": "The care and guidance we received made all the difference. Today we are excited for our new beginning.",
+              "name": "Neha & Karan",
+              "treatment": "IUI Treatment",
+              "image": "/images/stories/neha-karan.jpg"
+            },
+            {
+              "quote": "We are grateful for the professional care and constant support. Our dream of becoming parents is now a reality.",
+              "name": "Aditi & Sameer",
+              "treatment": "ICSI Treatment",
+              "image": "/images/stories/aditi-sameer.jpg"
+            },
+            {
+              "quote": "The team made our fertility journey smooth and stress-free. We couldn't have asked for a better experience.",
+              "name": "Meera & Arjun",
+              "treatment": "Fertility Preservation",
+              "image": "/images/stories/meera-arjun.jpg"
+            }
+          ]
+        },
+        "Blog": {
+          "intro": {
+            "title": {
+              "line1": "Latest updates and",
+              "line2": "expert fertility insights"
+            },
+            "description": "Stay informed with expert advice, patient stories, and the latest developments in fertility and reproductive health to support your journey."
+          },
+          "perPage": 3,
+          "items": [
+            {
+              "slug": "lifestyle-choices-chances-of-conception",
+              "category": "Fertility Insights",
+              "tag": "Fertility Care",
+              "title": "How lifestyle choices can improve your chances of conception",
+              "headline": {
+                "line1": "How Lifestyle Choices",
+                "line2": "Can Improve Conception"
+              },
+              "date": "Oct 16, 2025",
+              "comments": "2 Comments",
+              "author": "Dr. Ananya Sharma",
+              "excerpt": "Learn how simple lifestyle changes can support your fertility and overall reproductive health.",
+              "image": "/images/blog/lifestyle.jpg",
+              "imageAlt": "Mother kissing her laughing baby",
+              "heroImage": "/images/blog/lifestyle.jpg",
+              "intro": "Everyday habits can play a meaningful role in reproductive health. Small, steady changes often support both general well-being and fertility for you and your partner.",
+              "sections": [
+                {
+                  "heading": "Nourish Your Body",
+                  "body": "A balanced diet with vegetables, fruit, whole grains, and lean protein supports overall health. Your doctor may also recommend a folic acid supplement if you are planning a pregnancy."
+                },
+                {
+                  "heading": "Build Healthy Routines",
+                  "body": "Moderate exercise, restful sleep, and limiting alcohol and tobacco can all help. If you have concerns or have been trying for some time, a fertility specialist can guide you on next steps.",
+                  "image": "/images/blog/couple-consult.jpg",
+                  "imageAlt": "Couple smiling while talking with their doctor"
+                }
+              ],
+              "quote": {
+                "text": "Small daily choices can add up to a healthier foundation for your parenthood journey.",
+                "author": "Dr. Ananya Sharma",
+                "role": "Fertility Specialist"
+              }
+            },
+            {
+              "slug": "what-to-expect-ivf-treatment-journey",
+              "category": "IVF Guides",
+              "tag": "IVF Guides",
+              "title": "What to expect during your IVF treatment journey",
+              "headline": {
+                "line1": "What to Expect During",
+                "line2": "Your IVF Journey"
+              },
+              "date": "Oct 16, 2025",
+              "comments": "No Comments",
+              "author": "Dr. Priya Kapoor",
+              "excerpt": "A step-by-step guide to help you understand the IVF process and feel more prepared.",
+              "image": "/images/blog/ultrasound.jpg",
+              "imageAlt": "Hand holding up an ultrasound print",
+              "heroImage": "/images/blog/ultrasound.jpg",
+              "intro": "Knowing what lies ahead can make IVF feel more manageable. Although each plan is personal, most treatment cycles follow a similar series of stages.",
+              "sections": [
+                {
+                  "heading": "Before Treatment Begins",
+                  "body": "Your specialist reviews your history and arranges tests to design the right plan. This is also a good time to ask questions about timelines, medicines, and costs."
+                },
+                {
+                  "heading": "During Your Cycle",
+                  "body": "A typical cycle includes ovarian stimulation, egg retrieval, fertilization in the lab, and embryo transfer. Regular monitoring lets your care team adjust the plan as needed.",
+                  "image": "/images/blog/couple-consult.jpg",
+                  "imageAlt": "Couple smiling while talking with their doctor"
+                }
+              ],
+              "quote": {
+                "text": "Understanding each step helps you feel supported and in control throughout treatment.",
+                "author": "Dr. Priya Kapoor",
+                "role": "IVF Specialist"
+              }
+            },
+            {
+              "slug": "understanding-pcos-impact-on-fertility",
+              "category": "Women's Health",
+              "tag": "Women's Health",
+              "title": "Understanding PCOS and its impact on fertility",
+              "headline": {
+                "line1": "Understanding PCOS",
+                "line2": "and Its Impact on Fertility"
+              },
+              "date": "Oct 16, 2025",
+              "comments": "2 Comments",
+              "author": "Dr. Rohit Mehta",
+              "excerpt": "Know how PCOS affects ovulation, hormonal balance, and fertility, and explore effective management.",
+              "image": "/images/blog/pcos.jpg",
+              "imageAlt": "Doctor smiling while speaking with a patient",
+              "heroImage": "/images/blog/pcos.jpg",
+              "intro": "Polycystic ovary syndrome (PCOS) is a common hormonal condition that can affect ovulation. With the right support, many people with PCOS go on to have children.",
+              "sections": [
+                {
+                  "heading": "How PCOS Affects Fertility",
+                  "body": "Hormonal imbalance can cause irregular or absent ovulation, which may make conception more difficult. Symptoms and severity vary from person to person."
+                },
+                {
+                  "heading": "Managing PCOS",
+                  "body": "Care may include lifestyle changes, medication to encourage ovulation, or assisted reproduction when appropriate. A specialist can recommend what fits your health and goals.",
+                  "image": "/images/blog/couple-consult.jpg",
+                  "imageAlt": "Couple smiling while talking with their doctor"
+                }
+              ],
+              "quote": {
+                "text": "A PCOS diagnosis is a starting point for personalized care, not the end of your plans.",
+                "author": "Dr. Rohit Mehta",
+                "role": "Reproductive Endocrinologist"
+              }
+            },
+            {
+              "slug": "understanding-ivf-step-towards-parenthood",
+              "category": "Fertility Care",
+              "tag": "Fertility Care",
+              "title": "Understanding IVF: a step towards parenthood",
+              "headline": {
+                "line1": "Understanding IVF:",
+                "line2": "A Step Towards Parenthood"
+              },
+              "date": "Oct 16, 2025",
+              "comments": "2 Comments",
+              "author": "Dr. Neha Sharma",
+              "excerpt": "Learn how IVF works, who it can help, and how specialists plan each stage of care.",
+              "image": "/images/blog/lifestyle.jpg",
+              "imageAlt": "Mother kissing her laughing baby",
+              "heroImage": "/images/blog/lab.jpg",
+              "intro": "IVF (In Vitro Fertilization) has given hope to millions of individuals and couples struggling with infertility. It is an advanced fertility treatment that combines an egg and sperm in a laboratory to create an embryo, which is then transferred to the uterus to help achieve pregnancy.",
+              "sections": [
+                {
+                  "heading": "What is IVF Treatment?",
+                  "body": "In Vitro Fertilization (IVF) is a widely used and effective fertility treatment for individuals and couples who are unable to conceive naturally. The process involves stimulating the ovaries, retrieving eggs, fertilizing them with sperm in a laboratory, and transferring the resulting embryo to the uterus."
+                },
+                {
+                  "heading": "Who Can Benefit from IVF?",
+                  "body": "IVF can be an option for individuals and couples facing a range of fertility challenges, including blocked fallopian tubes, low sperm count, unexplained infertility, or age-related fertility decline. A personalized evaluation with a fertility specialist helps determine if IVF is the right choice for you.",
+                  "image": "/images/blog/couple-consult.jpg",
+                  "imageAlt": "Couple smiling while talking with their doctor"
+                },
+                {
+                  "heading": "The IVF Process",
+                  "body": "The IVF journey is carefully planned and monitored by a team of specialists. It includes ovarian stimulation, egg retrieval, fertilization in the lab, and embryo transfer. Each step is designed to maximize the chances of a successful pregnancy while ensuring your comfort and safety."
+                }
+              ],
+              "quote": {
+                "text": "IVF is not just a medical procedure, it's a journey of hope, strength and new beginnings.",
+                "author": "Dr. Neha Sharma",
+                "role": "Fertility Specialist"
+              }
+            },
+            {
+              "slug": "preparing-emotionally-for-fertility-treatment",
+              "category": "IVF Guides",
+              "tag": "IVF Guides",
+              "title": "Preparing emotionally for your fertility treatment",
+              "headline": {
+                "line1": "Preparing Emotionally",
+                "line2": "for Fertility Treatment"
+              },
+              "date": "Oct 16, 2025",
+              "comments": "No Comments",
+              "author": "Dr. Priya Kapoor",
+              "excerpt": "Practical ways to care for your emotional well-being and stay connected during treatment.",
+              "image": "/images/blog/ultrasound.jpg",
+              "imageAlt": "Hand holding up an ultrasound print",
+              "heroImage": "/images/blog/ultrasound.jpg",
+              "intro": "Fertility treatment can bring hope and uncertainty at the same time. Taking care of your emotional health is an important part of the journey.",
+              "sections": [
+                {
+                  "heading": "Talk Openly",
+                  "body": "Share your feelings with your partner, loved ones, or care team. Honest conversations can ease pressure and help you make decisions together."
+                },
+                {
+                  "heading": "Ask for Support",
+                  "body": "Counsellors and support groups can provide helpful perspective. Simple routines such as walking, rest, and time away from treatment planning can also help.",
+                  "image": "/images/blog/couple-consult.jpg",
+                  "imageAlt": "Couple smiling while talking with their doctor"
+                }
+              ],
+              "quote": {
+                "text": "Caring for your emotional well-being is part of your care, not separate from it.",
+                "author": "Dr. Priya Kapoor",
+                "role": "IVF Specialist"
+              }
+            },
+            {
+              "slug": "when-to-see-a-fertility-specialist",
+              "category": "Women's Health",
+              "tag": "Women's Health",
+              "title": "When should you see a fertility specialist?",
+              "headline": {
+                "line1": "When Should You See",
+                "line2": "a Fertility Specialist?"
+              },
+              "date": "Oct 16, 2025",
+              "comments": "2 Comments",
+              "author": "Dr. Ananya Sharma",
+              "excerpt": "Understand common signs and timelines that may mean it is time to seek expert advice.",
+              "image": "/images/blog/pcos.jpg",
+              "imageAlt": "Doctor smiling while speaking with a patient",
+              "heroImage": "/images/blog/pcos.jpg",
+              "intro": "Many people wonder how long to try before asking for help. Early advice can provide clarity and more options, even if treatment turns out not to be needed.",
+              "sections": [
+                {
+                  "heading": "Common Timelines",
+                  "body": "Doctors commonly suggest an evaluation after 12 months of trying, or after 6 months if you are 35 or older. If you are over 40, it is usually best to seek advice sooner."
+                },
+                {
+                  "heading": "Reasons to Seek Help Sooner",
+                  "body": "Irregular periods, endometriosis, PCOS, previous pregnancy loss, or known male fertility concerns are all good reasons to book a consultation early.",
+                  "image": "/images/blog/couple-consult.jpg",
+                  "imageAlt": "Couple smiling while talking with their doctor"
+                }
+              ],
+              "quote": {
+                "text": "An early conversation can bring clarity, whatever stage of the journey you are at.",
+                "author": "Dr. Ananya Sharma",
+                "role": "Fertility Specialist"
+              }
+            }
+          ]
+        },
+        "Contact": {
+          "eyebrow": "Get in Touch",
+          "title": {
+            "line1": "Have Questions?",
+            "line2": "We're Here to Help!"
+          },
+          "description": "Get in touch with our fertility specialists. We're happy to answer your questions and guide you at every step of your journey.",
+          "detailsHeading": "Our Contact Details",
+          "form": {
+            "eyebrow": "Send Us a Message",
+            "title": {
+              "line1": "Book a Consultation",
+              "line2": "We'll Get Back to You Soon"
+            },
+            "consent": "I agree that my submitted data is being",
+            "consentHighlight": "collected and stored.",
+            "submit": "Send Message",
+            "success": "Thank you! We'll get back to you soon."
+          },
+          "location": {
+            "eyebrow": "Visit Our Clinic",
+            "title": {
+              "line1": "Our Location",
+              "line2": "Find Us Easily"
+            },
+            "description": "Visit our clinic for a personalized consultation. Our team is always here to support you.",
+            "image": "/images/clinic.jpg",
+            "imageAlt": "Bright clinic reception area with seating and plants"
+          }
+        },
+        "BookAppointment": {
+          "eyebrow": "Book Appointment",
+          "title": {
+            "line1": "Schedule Your",
+            "line2": "Fertility Consultation"
+          },
+          "description": "Fill in your details and share your preferred date. Our team will contact you to confirm your appointment.",
+          "treatmentPlaceholder": "Select a treatment",
+          "generalOption": "Not sure yet",
+          "submit": "Book Appointment",
+          "success": "Thank you! We'll contact you soon to confirm your appointment."
         }
-      ],
-      "quote": {
-        "text": "Small daily choices can add up to a healthier foundation for your parenthood journey.",
-        "author": "Dr. Ananya Sharma",
-        "role": "Fertility Specialist"
       }
-    },
-    {
-      "slug": "what-to-expect-ivf-treatment-journey",
-      "category": "IVF Guides",
-      "tag": "IVF Guides",
-      "title": "What to expect during your IVF treatment journey",
-      "headline": { "line1": "What to Expect During", "line2": "Your IVF Journey" },
-      "date": "Oct 16, 2025",
-      "comments": "No Comments",
-      "author": "Dr. Priya Kapoor",
-      "excerpt": "A step-by-step guide to help you understand the IVF process and feel more prepared.",
-      "image": "/images/blog/ultrasound.jpg",
-      "imageAlt": "Hand holding up an ultrasound print",
-      "heroImage": "/images/blog/ultrasound.jpg",
-      "intro": "Knowing what lies ahead can make IVF feel more manageable. Although each plan is personal, most treatment cycles follow a similar series of stages.",
-      "sections": [
-        {
-          "heading": "Before Treatment Begins",
-          "body": "Your specialist reviews your history and arranges tests to design the right plan. This is also a good time to ask questions about timelines, medicines, and costs."
-        },
-        {
-          "heading": "During Your Cycle",
-          "body": "A typical cycle includes ovarian stimulation, egg retrieval, fertilization in the lab, and embryo transfer. Regular monitoring lets your care team adjust the plan as needed.",
-          "image": "/images/blog/couple-consult.jpg",
-          "imageAlt": "Couple smiling while talking with their doctor"
-        }
-      ],
-      "quote": {
-        "text": "Understanding each step helps you feel supported and in control throughout treatment.",
-        "author": "Dr. Priya Kapoor",
-        "role": "IVF Specialist"
-      }
-    },
-    {
-      "slug": "understanding-pcos-impact-on-fertility",
-      "category": "Women's Health",
-      "tag": "Women's Health",
-      "title": "Understanding PCOS and its impact on fertility",
-      "headline": { "line1": "Understanding PCOS", "line2": "and Its Impact on Fertility" },
-      "date": "Oct 16, 2025",
-      "comments": "2 Comments",
-      "author": "Dr. Rohit Mehta",
-      "excerpt": "Know how PCOS affects ovulation, hormonal balance, and fertility, and explore effective management.",
-      "image": "/images/blog/pcos.jpg",
-      "imageAlt": "Doctor smiling while speaking with a patient",
-      "heroImage": "/images/blog/pcos.jpg",
-      "intro": "Polycystic ovary syndrome (PCOS) is a common hormonal condition that can affect ovulation. With the right support, many people with PCOS go on to have children.",
-      "sections": [
-        {
-          "heading": "How PCOS Affects Fertility",
-          "body": "Hormonal imbalance can cause irregular or absent ovulation, which may make conception more difficult. Symptoms and severity vary from person to person."
-        },
-        {
-          "heading": "Managing PCOS",
-          "body": "Care may include lifestyle changes, medication to encourage ovulation, or assisted reproduction when appropriate. A specialist can recommend what fits your health and goals.",
-          "image": "/images/blog/couple-consult.jpg",
-          "imageAlt": "Couple smiling while talking with their doctor"
-        }
-      ],
-      "quote": {
-        "text": "A PCOS diagnosis is a starting point for personalized care, not the end of your plans.",
-        "author": "Dr. Rohit Mehta",
-        "role": "Reproductive Endocrinologist"
-      }
-    },
-    {
-      "slug": "understanding-ivf-step-towards-parenthood",
-      "category": "Fertility Care",
-      "tag": "Fertility Care",
-      "title": "Understanding IVF: a step towards parenthood",
-      "headline": { "line1": "Understanding IVF:", "line2": "A Step Towards Parenthood" },
-      "date": "Oct 16, 2025",
-      "comments": "2 Comments",
-      "author": "Dr. Neha Sharma",
-      "excerpt": "Learn how IVF works, who it can help, and how specialists plan each stage of care.",
-      "image": "/images/blog/lifestyle.jpg",
-      "imageAlt": "Mother kissing her laughing baby",
-      "heroImage": "/images/blog/lab.jpg",
-      "intro": "IVF (In Vitro Fertilization) has given hope to millions of individuals and couples struggling with infertility. It is an advanced fertility treatment that combines an egg and sperm in a laboratory to create an embryo, which is then transferred to the uterus to help achieve pregnancy.",
-      "sections": [
-        {
-          "heading": "What is IVF Treatment?",
-          "body": "In Vitro Fertilization (IVF) is a widely used and effective fertility treatment for individuals and couples who are unable to conceive naturally. The process involves stimulating the ovaries, retrieving eggs, fertilizing them with sperm in a laboratory, and transferring the resulting embryo to the uterus."
-        },
-        {
-          "heading": "Who Can Benefit from IVF?",
-          "body": "IVF can be an option for individuals and couples facing a range of fertility challenges, including blocked fallopian tubes, low sperm count, unexplained infertility, or age-related fertility decline. A personalized evaluation with a fertility specialist helps determine if IVF is the right choice for you.",
-          "image": "/images/blog/couple-consult.jpg",
-          "imageAlt": "Couple smiling while talking with their doctor"
-        },
-        {
-          "heading": "The IVF Process",
-          "body": "The IVF journey is carefully planned and monitored by a team of specialists. It includes ovarian stimulation, egg retrieval, fertilization in the lab, and embryo transfer. Each step is designed to maximize the chances of a successful pregnancy while ensuring your comfort and safety."
-        }
-      ],
-      "quote": {
-        "text": "IVF is not just a medical procedure, it's a journey of hope, strength and new beginnings.",
-        "author": "Dr. Neha Sharma",
-        "role": "Fertility Specialist"
-      }
-    },
-    {
-      "slug": "preparing-emotionally-for-fertility-treatment",
-      "category": "IVF Guides",
-      "tag": "IVF Guides",
-      "title": "Preparing emotionally for your fertility treatment",
-      "headline": { "line1": "Preparing Emotionally", "line2": "for Fertility Treatment" },
-      "date": "Oct 16, 2025",
-      "comments": "No Comments",
-      "author": "Dr. Priya Kapoor",
-      "excerpt": "Practical ways to care for your emotional well-being and stay connected during treatment.",
-      "image": "/images/blog/ultrasound.jpg",
-      "imageAlt": "Hand holding up an ultrasound print",
-      "heroImage": "/images/blog/ultrasound.jpg",
-      "intro": "Fertility treatment can bring hope and uncertainty at the same time. Taking care of your emotional health is an important part of the journey.",
-      "sections": [
-        {
-          "heading": "Talk Openly",
-          "body": "Share your feelings with your partner, loved ones, or care team. Honest conversations can ease pressure and help you make decisions together."
-        },
-        {
-          "heading": "Ask for Support",
-          "body": "Counsellors and support groups can provide helpful perspective. Simple routines such as walking, rest, and time away from treatment planning can also help.",
-          "image": "/images/blog/couple-consult.jpg",
-          "imageAlt": "Couple smiling while talking with their doctor"
-        }
-      ],
-      "quote": {
-        "text": "Caring for your emotional well-being is part of your care, not separate from it.",
-        "author": "Dr. Priya Kapoor",
-        "role": "IVF Specialist"
-      }
-    },
-    {
-      "slug": "when-to-see-a-fertility-specialist",
-      "category": "Women's Health",
-      "tag": "Women's Health",
-      "title": "When should you see a fertility specialist?",
-      "headline": { "line1": "When Should You See", "line2": "a Fertility Specialist?" },
-      "date": "Oct 16, 2025",
-      "comments": "2 Comments",
-      "author": "Dr. Ananya Sharma",
-      "excerpt": "Understand common signs and timelines that may mean it is time to seek expert advice.",
-      "image": "/images/blog/pcos.jpg",
-      "imageAlt": "Doctor smiling while speaking with a patient",
-      "heroImage": "/images/blog/pcos.jpg",
-      "intro": "Many people wonder how long to try before asking for help. Early advice can provide clarity and more options, even if treatment turns out not to be needed.",
-      "sections": [
-        {
-          "heading": "Common Timelines",
-          "body": "Doctors commonly suggest an evaluation after 12 months of trying, or after 6 months if you are 35 or older. If you are over 40, it is usually best to seek advice sooner."
-        },
-        {
-          "heading": "Reasons to Seek Help Sooner",
-          "body": "Irregular periods, endometriosis, PCOS, previous pregnancy loss, or known male fertility concerns are all good reasons to book a consultation early.",
-          "image": "/images/blog/couple-consult.jpg",
-          "imageAlt": "Couple smiling while talking with their doctor"
-        }
-      ],
-      "quote": {
-        "text": "An early conversation can bring clarity, whatever stage of the journey you are at.",
-        "author": "Dr. Ananya Sharma",
-        "role": "Fertility Specialist"
-      }
-    }
-  ],
-  "bookAppointment": {
-    "bannerTitle": "Book Appointment",
-    "eyebrow": "Book Appointment",
-    "title": { "line1": "Schedule Your", "line2": "Fertility Consultation" },
-    "description": "Fill in your details and share your preferred date. Our team will contact you to confirm your appointment.",
-    "treatmentPlaceholder": "Select a treatment",
-    "generalOption": "Not sure yet",
-    "submit": "Book Appointment",
-    "success": "Thank you! We'll contact you soon to confirm your appointment."
-  },
-  "contact": {
-    "eyebrow": "Get in Touch",
-    "title": { "line1": "Have Questions?", "line2": "We're Here to Help!" },
-    "description": "Get in touch with our fertility specialists. We're happy to answer your questions and guide you at every step of your journey.",
-    "detailsHeading": "Our Contact Details",
-    "form": {
-      "eyebrow": "Send Us a Message",
-      "title": { "line1": "Book a Consultation", "line2": "We'll Get Back to You Soon" },
-      "consent": "I agree that my submitted data is being",
-      "consentHighlight": "collected and stored.",
-      "submit": "Send Message",
-      "success": "Thank you! We'll get back to you soon."
-    },
-    "location": {
-      "eyebrow": "Visit Our Clinic",
-      "title": { "line1": "Our Location", "line2": "Find Us Easily" },
-      "description": "Visit our clinic for a personalized consultation. Our team is always here to support you.",
-      "image": "/images/clinic.jpg",
-      "imageAlt": "Bright clinic reception area with seating and plants"
     }
   }
 }

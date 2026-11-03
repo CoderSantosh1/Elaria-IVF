@@ -30,10 +30,33 @@ export interface SiteInfo {
   footerAddress: string[];
   hours: string[];
   copyright: string;
-  cta: NavChild;
-  socials: SocialLink[];
+  phoneHref: string;
+}
+
+export interface PageHero {
+  metaTitle?: string;
+  title: string;
+}
+
+export type PageHeroKey =
+  | "about"
+  | "treatments"
+  | "treatmentDetails"
+  | "doctors"
+  | "successStories"
+  | "blog"
+  | "blogDetails"
+  | "contact"
+  | "bookAppointment";
+
+export interface CommonData {
+  site: SiteInfo;
   navigation: NavItem[];
   quickLinks: NavChild[];
+  socials: SocialLink[];
+  cta: NavChild;
+  pageHeroes: Record<PageHeroKey, PageHero>;
+  stats: Stat[];
 }
 
 export interface HeroContent {
@@ -48,7 +71,8 @@ export interface HeroContent {
 }
 
 export interface Stat {
-  value: string;
+  value: number;
+  suffix: string;
   label: string;
 }
 
@@ -60,7 +84,6 @@ export interface AboutIntroContent {
   body: string;
   image: string;
   imageAlt: string;
-  stats: Stat[];
 }
 
 export interface Feature {
@@ -180,7 +203,6 @@ export interface BlogPost {
 }
 
 export interface BookAppointmentContent {
-  bannerTitle: string;
   eyebrow: string;
   title: TwoToneTitle;
   description: string;

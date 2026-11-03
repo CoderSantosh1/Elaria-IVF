@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
-import type { SiteInfo } from "@/types";
+import type { CommonData } from "@/types";
 import Reveal from "@/components/ui/Reveal";
 import ScrollTopButton from "@/components/ui/ScrollTopButton";
 import SocialIcon from "@/components/ui/SocialIcon";
@@ -9,7 +9,9 @@ import SocialIcon from "@/components/ui/SocialIcon";
 const iconCircle = "grid size-10 shrink-0 place-items-center rounded-full bg-[#d5e8f7] text-brand-dark";
 const columnTitle = "font-heading text-xl font-semibold text-ink";
 
-export default function Footer({ site }: { site: SiteInfo }) {
+export default function Footer({ common }: { common: CommonData }) {
+  const { site } = common;
+
   return (
     <footer className="bg-gradient-to-b from-[#eff7fe] to-mist">
       <div className="container-site grid gap-10 pt-16 pb-12 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_0.8fr_0.8fr] lg:gap-14 lg:pt-20">
@@ -32,7 +34,7 @@ export default function Footer({ site }: { site: SiteInfo }) {
               <span>{site.footerAddress.map((line) => <span key={line} className="block">{line}</span>)}</span>
             </li>
             <li>
-              <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="flex items-center gap-4 hover:text-brand">
+              <a href={site.phoneHref} className="flex items-center gap-4 hover:text-brand">
                 <span className={iconCircle}><Phone aria-hidden className="size-4" /></span>
                 {site.phone}
               </a>
@@ -43,7 +45,7 @@ export default function Footer({ site }: { site: SiteInfo }) {
         <Reveal delay={200}>
           <h2 className={columnTitle}>Quick Links</h2>
           <ul className="mt-5 space-y-2">
-            {site.quickLinks.map((link) => (
+            {common.quickLinks.map((link) => (
               <li key={link.label}><Link href={link.href} className="inline-block transition hover:translate-x-1 hover:text-brand">{link.label}</Link></li>
             ))}
           </ul>
@@ -52,7 +54,7 @@ export default function Footer({ site }: { site: SiteInfo }) {
         <Reveal delay={300}>
           <h2 className={columnTitle}>Follow Us</h2>
           <ul className="mt-5 flex gap-3">
-            {site.socials.map((social) => (
+            {common.socials.map((social) => (
               <li key={social.name}>
                 <a href={social.href} target="_blank" rel="noreferrer" aria-label={social.name} className={`${iconCircle} transition duration-300 hover:-translate-y-1 hover:bg-brand hover:text-white`}>
                   <SocialIcon name={social.name} />

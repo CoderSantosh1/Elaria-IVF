@@ -5,12 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowRight, CalendarDays, Menu, X } from "lucide-react";
-import type { NavItem, SiteInfo } from "@/types";
+import type { CommonData, NavItem } from "@/types";
 
 const isActive = (pathname: string, item: NavItem) =>
   item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
 
-export default function Header({ site }: { site: SiteInfo }) {
+export default function Header({ common }: { common: CommonData }) {
+  const { site } = common;
+
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -35,18 +37,18 @@ export default function Header({ site }: { site: SiteInfo }) {
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-5 xl:flex ">
-          {site.navigation.map((item) => (
+          {common.navigation.map((item) => (
             <Link key={item.label} href={item.href} className={desktopLink(item)}>{item.label}</Link>
           ))}
         </nav>
 
         <div className="flex items-center gap-3">
           <Link
-            href={site.cta.href}
+            href={common.cta.href}
             className="group hidden items-center gap-3 rounded-xl bg-gradient-to-b from-brand to-brand-dark px-5 py-3.5 text-sm font-medium whitespace-nowrap text-white shadow-lg shadow-brand/30 transition hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/40 sm:flex"
           >
             <CalendarDays aria-hidden className="size-5" />
-            {site.cta.label}
+            {common.cta.label}
             <ArrowRight aria-hidden className="size-4 transition group-hover:translate-x-1" />
           </Link>
           <button
@@ -64,14 +66,14 @@ export default function Header({ site }: { site: SiteInfo }) {
       {menuOpen && (
         <nav aria-label="Mobile" className="anim-drop max-h-[calc(100dvh-5rem)] overflow-y-auto border-t border-line bg-white xl:hidden">
           <ul className="container-site py-3">
-            {site.navigation.map((item) => (
+            {common.navigation.map((item) => (
               <li key={item.label} className="border-b border-line/60 last:border-0">
                 <Link href={item.href} onClick={() => setMenuOpen(false)} className="block py-3 font-medium text-ink">{item.label}</Link>
               </li>
             ))}
             <li className="pt-3 sm:hidden">
-              <Link href={site.cta.href} onClick={() => setMenuOpen(false)} className="flex items-center justify-center gap-2 rounded-xl bg-brand-dark px-5 py-3 text-sm font-medium text-white">
-                {site.cta.label}
+              <Link href={common.cta.href} onClick={() => setMenuOpen(false)} className="flex items-center justify-center gap-2 rounded-xl bg-brand-dark px-5 py-3 text-sm font-medium text-white">
+                {common.cta.label}
                 <ArrowRight aria-hidden className="size-4" />
               </Link>
             </li>
